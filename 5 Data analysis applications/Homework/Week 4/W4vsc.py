@@ -177,7 +177,6 @@ avg_rec_at_1_tr_l = np.mean(rec_at_1_tr_l)
 avg_prec_at_5_tr_l = np.mean(prec_at_5_tr_l)
 avg_rec_at_5_tr_l = np.mean(rec_at_5_tr_l)
 
-
 #%%
 with open('ans1.txt', 'w') as file:
     r1 = '%.2f' % round(avg_rec_at_1_tr_l, 2)
