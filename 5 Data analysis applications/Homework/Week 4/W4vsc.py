@@ -45,6 +45,12 @@ InteractiveShell.ast_node_interactivity = "all"
 # #### 1. Reading sessions train and test datasets.
 
 #%%
+import os
+
+cwd = os.getcwd()  # Get the current working directory (cwd)
+files = os.listdir(cwd)  # Get all the files in that directory
+print("Files in '%s': %s" % (cwd, files))
+#%%
 # Reading train and test data
 with open('coursera_sessions_train.txt', 'r') as file:
     sess_train = file.read().splitlines()
